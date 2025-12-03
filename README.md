@@ -85,30 +85,12 @@ Setelah instalasi selesai, VPS akan **otomatis membuka Panel UI** melalui browse
 ## 🔧 Menu Utama
 
 1. Create SSH/WebSocket Account
-
-
 2. Create Hysteria2 Account
-
-
 3. Create ZipVPN Account (opsional)
-
-
 4. List Users
-
-
 5. Delete User
-
-
 6. Change Ports
-
-
 7. Check Bandwidth VPS
-
-
 8. Backup & Snapshot
-
-
 9. Panel Manager
-
-
 10. Exit
