@@ -1,0 +1,29 @@
+name: JP Script Auto Check
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  schedule:
+    - cron: "0 */6 * * *"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set permissions
+        run: chmod -R 755 .
+
+      - name: Run test script
+        run: |
+          echo "Running Script Check…"
+          ls -lah
+          bash ./install.sh || true
+
+      - name: Finished
+        run: echo "Workflow complete."
