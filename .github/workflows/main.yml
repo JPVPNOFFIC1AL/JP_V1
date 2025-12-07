@@ -8,10 +8,6 @@ on:
   schedule:
     - cron: "0 */6 * * *"  # Menjadwalkan pekerjaan setiap 6 jam
 
-env:
-  HTTP_PROXY: http://<proxy-address>:<port>  # Ganti dengan alamat proxy dan port yang sesuai
-  HTTPS_PROXY: http://<proxy-address>:<port>  # Ganti dengan alamat proxy dan port yang sesuai
-
 jobs:
   build:
     runs-on: ubuntu-latest
